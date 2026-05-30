@@ -1,0 +1,122 @@
+/* about */
+
+.about {
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+.about__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about__eyebrow {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-primario);
+  margin-bottom: 1.5rem;
+}
+
+.about__titulo {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 300;
+  color: var(--color-secundario);
+  line-height: 1.15;
+  margin-bottom: 4rem;
+  max-width: 820px;
+}
+
+.about__titulo em {
+  font-style: italic;
+  color: var(--color-primario);
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about__bio {
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-acento);
+  line-height: 1.9;
+  max-width: 640px;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(184, 150, 90, 0.2);
+}
+
+.about__stat-valor {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--color-primario);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.about__stat-etiqueta {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-acento);
+}
+
+.about__linea {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(184, 150, 90, 0.15), transparent);
+  display: none;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .about {
+    padding: 10rem 4rem;
+  }
+
+  .about__body {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .about__bio {
+    flex: 1;
+  }
+
+  .about__stats {
+    flex-shrink: 0;
+    width: 280px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 2rem;
+  }
+
+  .about__linea {
+    display: block;
+  }
+}
