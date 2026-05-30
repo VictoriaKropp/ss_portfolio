@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "process": "Proceso",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Sebastian Scatturice",
+    "subtitle": "Asesor Gastronómico"
+  }
+}

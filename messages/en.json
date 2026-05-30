@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "process": "Process",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Sebastian Scatturice",
+    "subtitle": "Gastronomic Assessor"
+  }
+}
