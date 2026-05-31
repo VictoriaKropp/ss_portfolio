@@ -1,0 +1,116 @@
+/* contacto */
+
+.contacto {
+  padding: 6rem 1.5rem;
+  border-top: 1px solid rgba(184, 150, 90, 0.1);
+}
+
+.contacto__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contacto__header {
+  margin-bottom: 4rem;
+}
+
+.contacto__eyebrow {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-primario);
+  margin-bottom: 1.5rem;
+}
+
+.contacto__titulo {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 300;
+  color: var(--color-secundario);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.contacto__subtitulo {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-acento);
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+/* botones */
+
+.contacto__botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto__btn {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.1rem 1.5rem;
+  border: 1px solid rgba(184, 150, 90, 0.2);
+  text-decoration: none;
+  transition: border-color 0.25s, background 0.25s;
+  cursor: pointer;
+}
+
+.contacto__btn:hover {
+  border-color: rgba(184, 150, 90, 0.6);
+  background: rgba(184, 150, 90, 0.04);
+}
+
+.contacto__btn-icon {
+  font-family: var(--fuente-detalle);
+  font-size: 0.75rem;
+  color: var(--color-primario);
+  letter-spacing: 0.1em;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contacto__btn-label {
+  font-family: var(--fuente-detalle);
+  font-size: 1rem;
+  color: var(--color-secundario);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* desktop */
+
+@media (min-width: 768px) {
+  .contacto {
+    padding: 10rem 4rem;
+  }
+
+  .contacto__botones {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .contacto__btn {
+    flex: 1;
+    max-width: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 1.75rem;
+  }
+
+  .contacto__btn-icon {
+    font-size: 0.85rem;
+    width: auto;
+  }
+
+  .contacto__btn-label {
+    font-size: 1.1rem;
+  }
+}
