@@ -5,6 +5,8 @@ import Skills from '../components/Skills'
 import Proceso from '../components/Proceso'
 import Testimonios from '../components/Testimonios'
 import Contacto from '../components/Contacto'
+import Proyectos from '../components/Proyectos' 
+
 export default async function Home({
   params
 }: {
@@ -17,6 +19,7 @@ export default async function Home({
       <Hero locale={locale} />
       <About locale={locale} />
       <Servicios locale={locale} />
+      <Proyectos locale={locale} />
       <Skills locale={locale} />
       <Proceso locale={locale} />
       <Testimonios locale={locale} />
